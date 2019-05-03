@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.grpc.examples.routeguide.RouteGuideClientTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-05-03T13:15:08" hostname="bjhldeMacBook-Pro.local" time="0.085">
+  <properties/>
+  <testcase name="recordRoute_serverError" classname="io.grpc.examples.routeguide.RouteGuideClientTest" time="0.007"/>
+  <testcase name="routeChat_echoResponse" classname="io.grpc.examples.routeguide.RouteGuideClientTest" time="0.018"/>
+  <testcase name="routeChat_simpleResponse" classname="io.grpc.examples.routeguide.RouteGuideClientTest" time="0.012"/>
+  <testcase name="getFeature" classname="io.grpc.examples.routeguide.RouteGuideClientTest" time="0.004"/>
+  <testcase name="routeChat_errorResponse" classname="io.grpc.examples.routeguide.RouteGuideClientTest" time="0.012"/>
+  <testcase name="listFeatures" classname="io.grpc.examples.routeguide.RouteGuideClientTest" time="0.012"/>
+  <testcase name="recordRoute" classname="io.grpc.examples.routeguide.RouteGuideClientTest" time="0.008"/>
+  <testcase name="listFeatures_error" classname="io.grpc.examples.routeguide.RouteGuideClientTest" time="0.004"/>
+  <testcase name="getFeature_error" classname="io.grpc.examples.routeguide.RouteGuideClientTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: *** RecordRoute
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient warning
+警告: RecordRoute Failed: Status{code=INVALID_ARGUMENT, description=null, cause=null}
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Visiting point 0, 0
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: *** RouteChat
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Sending message "First message" at 0, 0
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Got message "First message" at 0, 0
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Sending message "Second message" at 0, 1
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Got message "Second message" at 0, 1
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Sending message "Third message" at 1, 0
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Got message "Third message" at 1, 0
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Sending message "Fourth message" at 1, 1
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Got message "Fourth message" at 1, 1
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Finished RouteChat
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: *** RouteChat
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Sending message "First message" at 0, 0
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Sending message "Second message" at 0, 1
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Sending message "Third message" at 1, 0
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Sending message "Fourth message" at 1, 1
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Got message "dummy msg1" at 0, 0
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Got message "dummy msg2" at 0, 0
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Finished RouteChat
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: *** GetFeature: lat=-1 lon=-1
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Found feature called "dummyFeature" at -0, -0
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: *** RouteChat
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Sending message "First message" at 0, 0
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient warning
+警告: RouteChat Failed: Status{code=PERMISSION_DENIED, description=null, cause=null}
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Sending message "Second message" at 0, 1
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Sending message "Third message" at 1, 0
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Sending message "Fourth message" at 1, 1
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: *** ListFeatures: lowLat=1 lowLon=2 hiLat=3 hiLon=4
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Result #1: name: "feature 1"
+
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Result #2: name: "feature 2"
+
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: *** RecordRoute
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Visiting point 0, 0
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Visiting point 0, 0
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Visiting point 0, 0
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Visiting point 0, 0
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Finished trip with 7 points. Passed 8 features. Travelled 9 meters. It took 10 seconds.
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Finished RecordRoute
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: *** ListFeatures: lowLat=1 lowLon=2 hiLat=3 hiLon=4
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: Result #1: name: "feature 1"
+
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient warning
+警告: RPC failed: Status{code=INVALID_ARGUMENT, description=null, cause=null}
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient info
+信息: *** GetFeature: lat=-1 lon=-1
+五月 03, 2019 9:15:08 下午 io.grpc.examples.routeguide.RouteGuideClient warning
+警告: RPC failed: Status{code=DATA_LOSS, description=null, cause=null}
+]]></system-err>
+</testsuite>
